@@ -1,145 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b613b956-d289-41f7-8ac7-d21d5a32b67e" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="b613b956-d289-41f7-8ac7-d21d5a32b67e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/TestNinja.UnitTests/MathTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNinja.UnitTests/TestNinja.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestNinja.UnitTests/TestNinja.UnitTests.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="TestNinja" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BookingHelper.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNinja/Mocking/BookingHelper.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="32" />
-              <folding>
-                <marker date="1508259385000" expanded="false" signature="6:66" ph="..." />
-                <marker date="1508259385000" expanded="true" signature="95:1421" ph="{...}" />
-                <marker date="1508259385000" expanded="true" signature="135:1005" ph="{...}" />
-                <marker date="1508259385000" expanded="true" signature="212:999" ph="{...}" />
-                <marker date="1508259385000" expanded="true" signature="1034:1154" ph="{...}" />
-                <marker date="1508259385000" expanded="true" signature="1080:1148" ph="{...}" />
-                <marker date="1508259385000" expanded="true" signature="1180:1419" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNinja/Mocking/EmployeeController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding>
-                <marker date="1507918892000" expanded="true" signature="54:902" ph="{...}" />
-                <marker date="1507918892000" expanded="true" signature="92:613" ph="{...}" />
-                <marker date="1507918892000" expanded="true" signature="172:233" ph="{...}" />
-                <marker date="1507918892000" expanded="true" signature="285:481" ph="{...}" />
-                <marker date="1507918892000" expanded="true" signature="546:607" ph="{...}" />
-                <marker date="1507918892000" expanded="true" signature="739:861" ph="{...}" />
-                <marker date="1507918892000" expanded="true" signature="835:855" ph="{...}" />
-                <marker date="1507918892000" expanded="true" signature="888:900" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InstallerHelper.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNinja/Mocking/InstallerHelper.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <marker date="1507832316000" expanded="true" signature="46:674" ph="{...}" />
-                <marker date="1507832316000" expanded="true" signature="81:672" ph="{...}" />
-                <marker date="1507832316000" expanded="true" signature="215:666" ph="{...}" />
-                <marker date="1507832316000" expanded="true" signature="283:564" ph="{...}" />
-                <marker date="1507832316000" expanded="true" signature="597:656" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderService.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNinja/Mocking/OrderService.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding>
-                <marker date="1507917774000" expanded="true" signature="27:513" ph="{...}" />
-                <marker date="1507917774000" expanded="true" signature="59:401" ph="{...}" />
-                <marker date="1507917774000" expanded="true" signature="156:208" ph="{...}" />
-                <marker date="1507917774000" expanded="true" signature="252:395" ph="{...}" />
-                <marker date="1507917774000" expanded="true" signature="425:437" ph="{...}" />
-                <marker date="1507917774000" expanded="true" signature="468:511" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNinja/Mocking/Product.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-              <folding>
-                <marker date="1507921503000" expanded="true" signature="27:368" ph="{...}" />
-                <marker date="1507921503000" expanded="true" signature="54:286" ph="{...}" />
-                <marker date="1507921503000" expanded="true" signature="155:280" ph="{...}" />
-                <marker date="1507921503000" expanded="true" signature="313:366" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VideoService.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestNinja/Mocking/VideoService.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-              <folding>
-                <marker date="1507745790000" expanded="false" signature="6:132" ph="..." />
-                <marker date="1507745790000" expanded="true" signature="161:1293" ph="{...}" />
-                <marker date="1507745790000" expanded="true" signature="193:1027" ph="{...}" />
-                <marker date="1507745790000" expanded="true" signature="238:492" ph="{...}" />
-                <marker date="1507745790000" expanded="true" signature="543:1021" ph="{...}" />
-                <marker date="1507745790000" expanded="true" signature="663:1011" ph="{...}" />
-                <marker date="1507745790000" expanded="true" signature="1051:1187" ph="{...}" />
-                <marker date="1507745790000" expanded="true" signature="1230:1291" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../../../Source Code/Mocking/BookingHelper.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Mocking/Product.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../../Source Code/Fundamentals/DateHelper.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Mocking/BookingHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/Math.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/ErrorLogger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/DemeritPointsCalculator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/HtmlFormatter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/FizzBuzz.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/CustomerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/Stack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestNinja/Mocking/EmployeeController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Mocking/VideoService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestNinja/Mocking/InstallerHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestNinja/Mocking/OrderService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/CustomerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/ErrorLogger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/HtmlFormatter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/Stack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/FizzBuzz.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/Math.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestNinja/Fundamentals/DemeritPointsCalculator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Mocking/Product.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Mocking/VideoService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestNinja/Mocking/BookingHelper.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -195,12 +89,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="2" />
     <option name="y" value="56" />
     <option name="width" value="967" />
     <option name="height" value="593" />
   </component>
+  <component name="ProjectId" id="23N58HTGU31cswvICysboObS21b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -242,104 +140,52 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.Default">
-    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
-      <option name="PROJECT_PATH" value="" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="USE_MONO" value="0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <envs />
-      <method />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
-      <method />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
-    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
-      <option name="PROJECT_PATH" value="" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="USE_MONO" value="0" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <envs />
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    <list>
+      <item itemvalue=".NET Project.Default" />
     </list>
-    <configuration />
-    <configuration />
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -352,6 +198,7 @@
       <updated>1507227824194</updated>
       <workItem from="1507227825406" duration="23277000" />
       <workItem from="1508952072060" duration="74000" />
+      <workItem from="1641561570415" duration="2465000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1507240218760</created>
@@ -434,20 +281,26 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TestNinja.UnitTests/FizzBuzzTests.cs">
