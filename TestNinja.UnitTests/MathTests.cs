@@ -1,3 +1,4 @@
+using System.Linq;
 using NUnit.Framework;
 using TestNinja.Fundamentals;
 
@@ -34,6 +35,28 @@ namespace TestNinja.UnitTests
             var result = _math.Max(a, b);
             
             Assert.That(result == expectedResult);
+        }
+
+        [Test]
+        public void GetOddNumbers_LimitIsGreaterThanZero_ReturnOddNumbersUpToLimit()
+        {
+            var result = _math.GetOddNumbers(5);
+            
+            Assert.That(result, Is.Not.Empty); // Checks if the array is not empty. Too General
+            
+            Assert.That(result.Count(), Is.EqualTo(3)); // Specific
+            
+            /*Assert.That(result, Does.Contain(1));
+            Assert.That(result, Does.Contain(3));
+            Assert.That(result, Does.Contain(5));*/
+            
+            Assert.That(result, Is.EquivalentTo(new [] {1, 3, 5})); // This line is equal to the line above.
+                                                                    // It doesn't check for the order of the array.
+            // Check if the array is ordered 
+            Assert.That(result, Is.Ordered);
+            
+            // Check if every element in the array is unique
+            Assert.That(result, Is.Unique);
         }
     }
 }
