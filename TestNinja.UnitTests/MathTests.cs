@@ -58,5 +58,16 @@ namespace TestNinja.UnitTests
             // Check if every element in the array is unique
             Assert.That(result, Is.Unique);
         }
+
+        [Test]
+        [TestCase(0)]
+        [TestCase(-1)]
+        public void GetOddNumbers_LimitIsLessThanOrEqualToZero_ReturnEmptyArray(int limit)
+        {
+            var result = _math.GetOddNumbers(limit);
+            
+            Assert.That(result, Is.Empty);
+        }
+        
     }
 }
