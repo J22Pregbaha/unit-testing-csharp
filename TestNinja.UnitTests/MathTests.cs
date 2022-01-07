@@ -15,6 +15,7 @@ namespace TestNinja.UnitTests
         }
         
         [Test]
+        [Ignore("This test works. I'm just ignoring it because I can")]
         public void Add_WhenCalled_ReturnsSumOfArguments()
         {
             // Act
