@@ -53,16 +53,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerControllerTests.cs" />
-    <Compile Include="DemeritPointsCalculatorTests.cs" />
-    <Compile Include="ErrorLoggerTests.cs" />
-    <Compile Include="FakeFileReader.cs" />
-    <Compile Include="FizzBuzzTests.cs" />
-    <Compile Include="HtmlFormatterTests.cs" />
-    <Compile Include="MathTests.cs" />
-    <Compile Include="ReservationTests.cs" />
+    <Compile Include="Fundamentals\CustomerControllerTests.cs" />
+    <Compile Include="Fundamentals\DemeritPointsCalculatorTests.cs" />
+    <Compile Include="Fundamentals\ErrorLoggerTests.cs" />
+    <Compile Include="Fundamentals\FizzBuzzTests.cs" />
+    <Compile Include="Fundamentals\HtmlFormatterTests.cs" />
+    <Compile Include="Fundamentals\MathTests.cs" />
+    <Compile Include="Fundamentals\ReservationTests.cs" />
+    <Compile Include="Fundamentals\StackTests.cs" />
+    <Compile Include="Mocking\FakeFileReader.cs" />
+    <Compile Include="Mocking\VideoServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StackTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
