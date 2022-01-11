@@ -9,16 +9,21 @@ namespace TestNinja.Mocking
 {
     public class VideoService
     {
-        public IFileReader FileReader { get; set; }
+        private readonly IFileReader _fileReader;
 
-        public VideoService()
+        public VideoService(IFileReader fileReader = null)
         {
-            FileReader = new FileReader();
+            /*
+            What this does is create a default constructor for other uses
+            of this code where a fake file reader isn't needed and a constructor
+            for unit testing where we want to pass a fake file reader.
+            */
+            _fileReader = fileReader ?? new FileReader(); // Use the file reader provided if the parameter isn't null
         }
         
         public string ReadVideoTitle()
         {
-            var str = FileReader.Read("video.txt");
+            var str = _fileReader.Read("video.txt");
             var video = JsonConvert.DeserializeObject<Video>(str);
             if (video == null)
                 return "Error parsing the video.";
