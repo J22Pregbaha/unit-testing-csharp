@@ -8,21 +8,21 @@ namespace TestNinja.UnitTests.Mocking
     [TestFixture]
     public class InstallerHelperTests
     {
-        private Mock<IFileDownloader> _webClientDownloader;
+        private Mock<IFileDownloader> _fileDownloader;
         private InstallerHelper _service;
 
         [SetUp]
         public void Setup()
         {
-            _webClientDownloader = new Mock<IFileDownloader>();
-            _service = new InstallerHelper(_webClientDownloader.Object);
+            _fileDownloader = new Mock<IFileDownloader>();
+            _service = new InstallerHelper(_fileDownloader.Object);
         }
 
         [Test]
         public void DownloadInstaller_DownloadFails_ReturnsFalse()
         {
-            _webClientDownloader.Setup(wCD => 
-                wCD.DownloadFile(It.IsAny<string>(), It.IsAny<string>())) // I'm using any string here because Moq needs the inputs to be exact to work correctly
+            _fileDownloader.Setup(fD => 
+                fD.DownloadFile(It.IsAny<string>(), It.IsAny<string>())) // I'm using any string here because Moq needs the inputs to be exact to work correctly
                 .Throws<WebException>();
             var result = _service.DownloadInstaller("customer", "installer");
             
