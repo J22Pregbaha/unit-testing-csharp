@@ -8,13 +8,13 @@ namespace TestNinja.UnitTests.Mocking
     [TestFixture]
     public class InstallerHelperTests
     {
-        private Mock<IWebClientDownloader> _webClientDownloader;
+        private Mock<IFileDownloader> _webClientDownloader;
         private InstallerHelper _service;
 
         [SetUp]
         public void Setup()
         {
-            _webClientDownloader = new Mock<IWebClientDownloader>();
+            _webClientDownloader = new Mock<IFileDownloader>();
             _service = new InstallerHelper(_webClientDownloader.Object);
         }
 

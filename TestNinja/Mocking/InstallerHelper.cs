@@ -5,11 +5,11 @@ namespace TestNinja.Mocking
     public class InstallerHelper
     {
         private string _setupDestinationFile;
-        private readonly IWebClientDownloader _webClientDownloader;
+        private readonly IFileDownloader _fileDownloader;
 
-        public InstallerHelper(IWebClientDownloader webClientDownloader)
+        public InstallerHelper(IFileDownloader fileDownloader)
         {
-            _webClientDownloader = webClientDownloader;
+            _fileDownloader = fileDownloader;
         }
 
         public bool DownloadInstaller(string customerName, string installerName)
@@ -17,7 +17,7 @@ namespace TestNinja.Mocking
             var url = $"http://example.com/{customerName}/{installerName}";
             try
             {
-                _webClientDownloader.DownloadFile(url, _setupDestinationFile);
+                _fileDownloader.DownloadFile(url, _setupDestinationFile);
 
                 return true;
             }

@@ -2,12 +2,12 @@ using System.Net;
 
 namespace TestNinja.Mocking
 {
-    public interface IWebClientDownloader
+    public interface IFileDownloader
     {
         void DownloadFile(string url, string path);
     }
 
-    public class WebClientDownloader : IWebClientDownloader
+    public class FileDownloader : IFileDownloader
     {
         public void DownloadFile(string url, string path)
         {
