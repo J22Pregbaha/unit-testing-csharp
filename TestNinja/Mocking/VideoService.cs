@@ -10,8 +10,9 @@ namespace TestNinja.Mocking
     public class VideoService
     {
         private readonly IFileReader _fileReader;
+        private IVideoRepository _videoRepository;
 
-        public VideoService(IFileReader fileReader = null)
+        public VideoService(IFileReader fileReader = null, IVideoRepository videoRepository = null)
         {
             /*
             What this does is create a default constructor for other uses
@@ -19,6 +20,7 @@ namespace TestNinja.Mocking
             for unit testing where we want to pass a fake file reader.
             */
             _fileReader = fileReader ?? new FileReader(); // Use the file reader provided if the parameter isn't null
+            _videoRepository = videoRepository ?? new VideoRepository();
         }
         
         public string ReadVideoTitle()
@@ -33,19 +35,13 @@ namespace TestNinja.Mocking
         public string GetUnprocessedVideosAsCsv()
         {
             var videoIds = new List<int>();
-            
-            using (var context = new VideoContext())
-            {
-                var videos = 
-                    (from video in context.Videos
-                    where !video.IsProcessed
-                    select video).ToList();
-                
-                foreach (var v in videos)
-                    videoIds.Add(v.Id);
 
-                return String.Join(",", videoIds);
-            }
+            var videos = _videoRepository.GetUnprocessedVideos();
+            foreach (var v in videos)
+                videoIds.Add(v.Id);
+
+            return String.Join(",", videoIds);
+            
         }
     }
 
