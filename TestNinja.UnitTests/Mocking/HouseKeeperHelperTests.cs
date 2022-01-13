@@ -33,14 +33,18 @@ namespace TestNinja.UnitTests.Mocking
                 Email = "test@test.com",
                 StatementEmailBody = "Test Email Body"
             };
+            
+            _repository.Setup(r => r.GetHouseKeepers())
+                .Returns(new List<Housekeeper> {_housekeeper}.AsQueryable());
+            
+            _saveStatement.Setup(s => s.SaveStatementToPdf(It.IsAny<int>(),
+                It.IsAny<string>(),
+                It.IsAny<DateTime>())).Returns("fileName");
         }
         
         [Test]
         public void SendStatementEmails_HouseKeeperHasEmail_SaveStatement()
         {
-            _repository.Setup(r => r.GetHouseKeepers())
-                .Returns(new List<Housekeeper> {_housekeeper}.AsQueryable());
-
             HousekeeperService.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
                 _repository.Object, _xtraMessageBox.Object);
             
@@ -49,15 +53,23 @@ namespace TestNinja.UnitTests.Mocking
         }
         
         [Test]
+        [TestCase(null)]
+        [TestCase(" ")]
+        [TestCase("")]
+        public void SendStatementEmails_HouseKeeperDoesNotHaveEmail_ShouldNotSaveStatement(string badEmail)
+        {
+            _housekeeper.Email = badEmail;
+
+            HousekeeperService.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
+                _repository.Object, _xtraMessageBox.Object);
+            
+            _saveStatement.Verify(sS => sS.SaveStatementToPdf(_housekeeper.Oid, 
+                _housekeeper.FullName, _statementDate), Times.Never);
+        }
+        
+        [Test]
         public void SendStatementEmails_StatementIsSavedToFile_EmailFile()
         {
-            _repository.Setup(r => r.GetHouseKeepers())
-                .Returns(new List<Housekeeper> {_housekeeper}.AsQueryable());
-
-            _saveStatement.Setup(s => s.SaveStatementToPdf(It.IsAny<int>(),
-                It.IsAny<string>(),
-                It.IsAny<DateTime>())).Returns("fileName");
-
             HousekeeperService.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
                 _repository.Object, _xtraMessageBox.Object);
             
@@ -68,15 +80,28 @@ namespace TestNinja.UnitTests.Mocking
         }
         
         [Test]
-        public void SendStatementEmails_SendEmailReturnsException_ShowXtraBox()
+        [TestCase(null)]
+        [TestCase(" ")]
+        [TestCase("")]
+        public void SendStatementEmails_StatementIsNotSavedToFile_FileShouldNotBeMailed(string badFileName)
         {
-            _repository.Setup(r => r.GetHouseKeepers())
-                .Returns(new List<Housekeeper> {_housekeeper}.AsQueryable());
-
             _saveStatement.Setup(s => s.SaveStatementToPdf(It.IsAny<int>(),
                 It.IsAny<string>(),
-                It.IsAny<DateTime>())).Returns("fileName");
-
+                It.IsAny<DateTime>())).Returns(badFileName);
+            
+            HousekeeperService.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
+                _repository.Object, _xtraMessageBox.Object);
+            
+            _sendEmail.Verify(
+                sE => sE.EmailFile(_housekeeper.Email, _housekeeper.StatementEmailBody, "fileName",
+                    $"Sandpiper Statement {_statementDate:yyyy-MM} {_housekeeper.FullName}"),
+                Times.Never
+            );
+        }
+        
+        [Test]
+        public void SendStatementEmails_SendEmailReturnsException_ShowXtraBox()
+        {
             _sendEmail.Setup(sE => sE.EmailFile(It.IsAny<string>(),
                 It.IsAny<string>(), It.IsAny<string>(),
                 It.IsAny<string>())).Throws<Exception>();
