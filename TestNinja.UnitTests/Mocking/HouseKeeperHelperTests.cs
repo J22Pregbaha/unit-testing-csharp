@@ -41,7 +41,7 @@ namespace TestNinja.UnitTests.Mocking
             _repository.Setup(r => r.GetHouseKeepers())
                 .Returns(new List<Housekeeper> {_housekeeper}.AsQueryable());
 
-            HousekeeperHelper.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
+            HousekeeperService.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
                 _repository.Object, _xtraMessageBox.Object);
             
             _saveStatement.Verify(sS => sS.SaveStatementToPdf(_housekeeper.Oid, 
@@ -58,7 +58,7 @@ namespace TestNinja.UnitTests.Mocking
                 It.IsAny<string>(),
                 It.IsAny<DateTime>())).Returns("fileName");
 
-            HousekeeperHelper.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
+            HousekeeperService.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
                 _repository.Object, _xtraMessageBox.Object);
             
             _sendEmail.Verify(
@@ -81,7 +81,7 @@ namespace TestNinja.UnitTests.Mocking
                 It.IsAny<string>(), It.IsAny<string>(),
                 It.IsAny<string>())).Throws<Exception>();
 
-            HousekeeperHelper.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
+            HousekeeperService.SendStatementEmails(_statementDate, _saveStatement.Object, _sendEmail.Object,
                 _repository.Object, _xtraMessageBox.Object);
             
             _xtraMessageBox.Verify(

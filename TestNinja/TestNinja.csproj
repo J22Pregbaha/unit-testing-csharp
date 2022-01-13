@@ -69,7 +69,7 @@
     <Compile Include="Mocking\EmployeeStorage.cs" />
     <Compile Include="Mocking\FileReader.cs" />
     <Compile Include="Mocking\BookingRepository.cs" />
-    <Compile Include="Mocking\HousekeeperHelper.cs" />
+    <Compile Include="Mocking\HousekeeperService.cs" />
     <Compile Include="Mocking\HouseKeepersRepository.cs" />
     <Compile Include="Mocking\InstallerHelper.cs" />
     <Compile Include="Mocking\OrderService.cs" />

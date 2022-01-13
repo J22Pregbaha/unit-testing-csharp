@@ -2,9 +2,9 @@ using System;
 
 namespace TestNinja.Mocking
 {
-    public static class HousekeeperHelper
+    public static class HousekeeperService
     {
-        public static bool SendStatementEmails(DateTime statementDate, ISaveStatement saveStatement, ISendEmail sendEmail,
+        public static void SendStatementEmails(DateTime statementDate, ISaveStatement saveStatement, ISendEmail sendEmail,
             IHouseKeepersRepository repository, IXtraMessageBox xtraMessageBox)
         {
             var housekeepers = repository.GetHouseKeepers();
@@ -33,8 +33,6 @@ namespace TestNinja.Mocking
                         MessageBoxButtons.OK);
                 }
             }
-
-            return true;
         }
     }
 
