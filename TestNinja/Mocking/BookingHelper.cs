@@ -11,7 +11,7 @@ namespace TestNinja.Mocking
             if (booking.Status == "Cancelled")
                 return string.Empty;
 
-            var bookings = bookingRepository.GetUnit(booking);
+            var bookings = bookingRepository.GetExistingBookings(booking);
 
             var overlappingBooking =
                 bookings.FirstOrDefault(
